@@ -51,7 +51,7 @@ const app = express();
 app.use(bodyParser.json()); // Middleware to parse JSON request bodies
 
 // Route for handling subscription requests
-app.post("ondc/v1/on_subscribe", function (req, res) {
+app.post("/ondc/v1/on_subscribe", function (req, res) {
   const { challenge } = req.body;
 
   console.log("challenge", challenge); // Extract the 'challenge' property from the request body
