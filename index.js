@@ -52,8 +52,14 @@ app.use(bodyParser.json()); // Middleware to parse JSON request bodies
 
 // Route for handling subscription requests
 app.post("ondc/v1/on_subscribe", function (req, res) {
-  const { challenge } = req.body; // Extract the 'challenge' property from the request body
-  const answer = decryptAES256ECB(sharedKey, challenge); // Decrypt the challenge using AES-256-ECB
+  const { challenge } = req.body;
+
+  console.log("challenge", challenge); // Extract the 'challenge' property from the request body
+  const answer = decryptAES256ECB(sharedKey, challenge);
+  console.log("answer", answer);
+  console.log("sharedKey", sharedKey);
+  console.log("challenge", challenge);
+  // Decrypt the challenge using AES-256-ECB
   const resp = { answer: answer };
   res.status(200).json(resp); // Send a JSON response with the answer
 });
