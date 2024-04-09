@@ -6,12 +6,12 @@ const _sodium = require("libsodium-wrappers");
 
 const port = 80; // Port on which the server will listen
 const ENCRYPTION_PRIVATE_KEY =
-  "MC4CAQAwBQYDK2VuBCIEIJgOS/n9mh0esleuUBQpcqnNmY14eei6gsLpN/8xTeFa";
+  "MC4CAQAwBQYDK2VuBCIEICA0tRk500RaSl6R5Op30t+9QQZF6xz014aNOWgu2p9W";
 const ONDC_PUBLIC_KEY =
   "MCowBQYDK2VuAyEAa9Wbpvd9SsrpOZFcynyt/TO3x0Yrqyys4NUGIvyxX2Q=";
-const REQUEST_ID = "69497e52-799c-4ea0-b8ed-632758e7dc38";
+const REQUEST_ID = "1e2effe1-70c5-435a-9f36-a8edfd4c8bba";
 const SIGNING_PRIVATE_KEY =
-  "ixivNT8ma0WVoVP16puIuPfMvPVHDBF5cXGJojXHQdb6dwcWIwgFfPOvHaITi3nhfPYhGHAoMu3jM3YQHQDihg==";
+  "0dbaBvbguApfPDOcmtPYfrHQ5sm1C+VKOeJhfTMWlZWkAowsvTnwZ38rZ11diqkua9HzOHt+kZdZFf1bmGJ/fw==";
 
 const htmlFile = `
 <!--Contents of ondc-site-verification.html. -->

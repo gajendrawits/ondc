@@ -1,0 +1,54 @@
+{
+  "context": {
+    "operation": {
+      "ops_no": 4
+    }
+  },
+  "message": {
+    "entity": {
+      "gst": {
+        "legal_entity_name": "ENAM",
+        "business_address": "Address",
+        "city_code": ["std:011"],
+        "gst_no": "07AAGCH2678LLL"
+      },
+      "pan": {
+        "name_as_per_pan": "ENAM",
+        "pan_no": "AAGCH2678L",
+        "date_of_incorporation": "20/04/2022"
+      },
+      "name_of_authorised_signatory": "ENAM",
+      "address_of_authorised_signatory": "Address",
+      "email_id": "",
+      "mobile_no": "",
+      "country": "IND",
+      "subscriber_id": "",
+      "unique_key_id": "805d0eaa-d649-4d6d-8c81-9762648b7a59",
+      "callback_url": "/",
+      "key_pair": {
+        "signing_public_key": "P7UQvwpaPM3qSMwdhZXLqzIMV+GoILXf3EaMCmP3mDU=",
+        "encryption_public_key": "MCowBQYDK2VuAyEA+QgxRPAfxb114Os4Sk+bksop1jXBvpOm7sXD9R8QHws=",
+        "valid_from": "{{$isoTimestamp}}",
+        "valid_until": "2034-03-10T09:26:02.658Z"
+      }
+    },
+    "network_participant": [
+      {
+        "subscriber_url": "/api/v2",
+        "domain": "ONDC:RET18",
+        "type": "sellerApp",
+        "msn": false,
+        "city_code": ["*"]
+      },
+      {
+        "subscriber_url": "/api/v2",
+        "domain": "nic2004:60232",
+        "type": "buyerApp",
+        "msn": false,
+        "city_code": ["*"]
+      }
+    ],
+    "request_id": "b15ab522-a746-4e63-8a83-23eeaa3d1244",
+    "timestamp": "{{$isoTimestamp}}"
+  }
+}
